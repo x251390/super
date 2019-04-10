@@ -1,0 +1,7 @@
+在事件里面进行路由跳转
+this.$router.push("/home")
+this.$refs 是一个对象获取到的就是每一个ref的值
+resetFields（）这是对表单进行从置事件resetFields（）
+   :default-active="$route.path" 刷新显示当前页面
+从定向 redirect“./”
+$route.path  这是获取到动态的路由地址

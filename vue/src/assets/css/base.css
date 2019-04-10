@@ -1,0 +1,9 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body,#app{
+    height:100%;
+    background: rgba(29, 158, 255,.2);
+   
+}
