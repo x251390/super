@@ -1,13 +1,13 @@
 <template>
  <div class="systeaminfo">
-<!--这是整体卡片-->
-     <el-card class="box-card">
+    <!--这是整体卡片-->
+        <el-card class="box-card">
                 <div slot="header" class="clearfix">
                     <span>商品管理</span>
                 </div>
                    <!-- 这是头部的分类 -->
                    <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-                    <el-row>
+                      <el-row>
                        <el-col :span="14">
                            
 
@@ -23,23 +23,21 @@
                                   <el-form-item label="关键字：" prop="name">
                                       <el-input ></el-input>
                                      
-                                 </el-form-item></el-col>
+                     </el-form-item></el-col>
                             <el-col :span="8">    <!-- 这是查询 -->
                               <el-form-item>
                                    <span>(商品名称，条形码)</span>
-                                <el-button type="primary" @click="submitForm('ruleForm')">查询</el-button>
+                                <el-button type="primary" @click="submitForm()">查询</el-button>
                                
                                </el-form-item>
                            </el-col>
 
-                    </el-row>
+                      </el-row>
 
-
-                               
-                             
-                       </el-col>
-                    </el-row>
-                   </el-form>
+     
+                         </el-col>
+                      </el-row>
+                  </el-form>
 
                    <!-- 这是下面的表格 -->
                     <el-table
@@ -99,7 +97,7 @@
                         layout="total, sizes, prev, pager, next, jumper"
                         :total="400">
                         </el-pagination>
-  </div>
+    </div>
                
      </el-card>
 
@@ -110,6 +108,10 @@
 export default {
      data() {
       return {
+        ruleForm:{
+
+        },
+
         tableData3: [{
           date: '2016-05-03',
           name: '我的优乐美',
